@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./ui/hover-card";
 
 export const Divider = () => {
   return (
@@ -50,5 +51,41 @@ export const Toast = () => {
         </motion.div>
       )}
     </AnimatePresence>
+  );
+};
+
+export const FancyHover = () => {
+  return (
+    <HoverCard openDelay={30} closeDelay={100}>
+      <HoverCardTrigger asChild>
+        <span className="highlight relative inline-block">
+          anurag
+          <span className="absolute -top-2 left-1 pointer-events-none">
+            <Image
+              src="/1.gif"
+              alt="floating cursor"
+              width={20}
+              height={20}
+              priority
+            />
+          </span>
+        </span>
+      </HoverCardTrigger>
+
+      <HoverCardContent
+        className="border-none shadow-none rounded-sm size-auto p-1 flex items-center justify-center"
+        side="top"
+        align="center"
+      >
+        <Image
+          src="/beep.png"
+          alt="anurag"
+          width={150}
+          height={150}
+          priority
+          className="rounded-sm"
+        />
+      </HoverCardContent>
+    </HoverCard>
   );
 };

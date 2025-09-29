@@ -1,4 +1,4 @@
-import { Divider, Toast } from "@/components";
+import { Divider, FancyHover, Toast } from "@/components";
 import { ACHIEVEMENTS, EXPERIENCES, LINKS, PROJECTS, SKILLS } from "@/lib";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
@@ -30,7 +30,12 @@ export default function Home() {
         </div>
 
         <p className="leading-6">
-          ohayo! im anurag. i am an undergraduate student at{" "}
+          ohayo! im{" "}
+          <div className="absolute -top-6 left-1 animate-bounce pointer-events-none">
+            <Image src="/1.gif" alt="cursor" width={32} height={32} />
+          </div>
+          <FancyHover />
+          [he/him]. i am an undergraduate student at{" "}
           <span className="highlight">nit durgapur</span>, pursuing{" "}
           <span className="highlight">biotechnology</span>. with over 4 years of
           experience in web engineering, i&apos;ve worked on a range of projects
