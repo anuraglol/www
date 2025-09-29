@@ -157,7 +157,7 @@ export default function Home() {
           </div>
         </section>
 
-        <p className="text-center italic text-foreground/70 mt-6">
+        <p className="text-center italic text-foreground/70 mt-6 mb-8">
           and may the odds be ever in your favor :3
         </p>
       </div>

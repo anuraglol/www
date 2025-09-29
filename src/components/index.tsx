@@ -4,20 +4,17 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-export const Divider = () => {
-  return (
-    <div className="my-6 border-neutral-400/60 border-dashed border-t-[1.5px]"></div>
-  );
-};
-
 export const Toast = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show toast after scrolling 300px, adjust as needed
-      if (window.scrollY > 200) setShow(true);
-      else setShow(false);
+      const scrollY = window.scrollY;
+      if (scrollY > 200 && scrollY < 600) {
+        setShow(true);
+      } else if (scrollY >= 600 || scrollY <= 200) {
+        setShow(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,6 +37,7 @@ export const Toast = () => {
             width={24}
             height={24}
             className="rounded-full"
+            quality={50}
           />
           <p>senpai noticed you!</p>
         </motion.div>
