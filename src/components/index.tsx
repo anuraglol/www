@@ -16,9 +16,9 @@ export const Toast = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 200 && scrollY < 600) {
+      if (scrollY > 200) {
         setShow(true);
-      } else if (scrollY >= 600 || scrollY <= 200) {
+      } else if (scrollY <= 200) {
         setShow(false);
       }
     };
@@ -44,6 +44,7 @@ export const Toast = () => {
             height={24}
             className="rounded-full"
             quality={50}
+            priority
           />
           <p>senpai noticed you!</p>
         </motion.div>
