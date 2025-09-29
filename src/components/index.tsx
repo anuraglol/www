@@ -4,6 +4,12 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
+export const Divider = () => {
+  return (
+    <div className="my-6 border-neutral-400/60 border-dashed border-t-[1.5px]"></div>
+  );
+};
+
 export const Toast = () => {
   const [show, setShow] = useState(false);
 
