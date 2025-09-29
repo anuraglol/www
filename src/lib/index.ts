@@ -84,10 +84,4 @@ export const PROJECTS = [
       "An image generation service that created custom NFTs for NAS Daily Summit attendees using @vercel/og.",
     url: "https://github.com/anuraglol/nas-summit-nft-gen",
   },
-  {
-    title: "ThirdVault",
-    description:
-      "An on-chain vault on Polygon, powered by IPFS and thirdweb, enabling secure, decentralized storage.",
-    url: "https://github.com/anuraglol/thirdvault",
-  },
 ];
