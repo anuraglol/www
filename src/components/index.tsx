@@ -38,7 +38,7 @@ export const Toast = () => {
           className="fixed right-6 bottom-6 px-4 font-mono text-[12px] py-3 rounded-md bg-white flex items-center gap-2 shadow-lg"
         >
           <Image
-            src="/favicon.ico"
+            src="/av.jpg"
             alt="avatar"
             width={24}
             height={24}

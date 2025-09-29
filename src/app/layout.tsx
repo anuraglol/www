@@ -67,7 +67,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="/favicon.ico" rel="preload" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap"
           rel="stylesheet"
