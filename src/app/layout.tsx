@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     "Next.js",
     "CandyPay",
   ],
-  authors: [{ name: "Anurag", url: "https://yourportfolio.com" }],
+  authors: [{ name: "Anurag", url: "https://anurag.tech" }],
   creator: "Anurag",
   openGraph: {
     title: "Anurag | Web Engineer",
     description:
       "Undergraduate at NIT Durgapur with 4+ years of web engineering experience. Focused on frontend development and Web3 projects.",
-    url: "https://yourportfolio.com",
+    url: "https://anurag.tech",
     siteName: "Anurag Kumar Portfolio",
     images: [
       {
