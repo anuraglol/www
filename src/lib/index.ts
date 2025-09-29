@@ -75,7 +75,7 @@ export const PROJECTS = [
     url: "https://sahil-pearl.vercel.app",
   },
   {
-    title: "React & Next.js Snippets (VSCode Extension)",
+    title: "React & Next.js Snippets (VSCode ext)",
     description:
       "A VSCode extension with React and Next.js snippets, used by over 30,000 developers to speed up development.",
     url: "https://marketplace.visualstudio.com/items?itemName=AvneeshAgarwal.react-nextjs-snippets",
