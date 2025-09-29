@@ -55,10 +55,31 @@ export const Toast = () => {
 };
 
 export const FancyHover = () => {
+  const [open, setOpen] = useState(false);
+  const [supportsHover, setSupportsHover] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setSupportsHover(window.matchMedia("(hover: hover)").matches);
+    }
+  }, []);
+
   return (
-    <HoverCard openDelay={30} closeDelay={100}>
+    <HoverCard
+      open={open}
+      onOpenChange={setOpen}
+      openDelay={30}
+      closeDelay={100}
+    >
       <HoverCardTrigger asChild>
-        <span className="highlight relative inline-block">
+        <span
+          className="highlight relative inline-block cursor-pointer"
+          onClick={() => {
+            if (!supportsHover) {
+              setOpen((prev) => !prev);
+            }
+          }}
+        >
           anurag
           <Image
             src="/1.gif"
