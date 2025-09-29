@@ -24,6 +24,7 @@ export default function Home() {
               alt="background"
               fill
               className="rounded-sm opacity-40 object-cover"
+              priority
             />
           </div>
         </div>
