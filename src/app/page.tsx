@@ -1,4 +1,4 @@
-import { Divider } from "@/components";
+import { Divider, Toast } from "@/components";
 import { ACHIEVEMENTS, EXPERIENCES, LINKS, PROJECTS, SKILLS } from "@/lib";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
@@ -10,6 +10,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen w-full bg-background text-foreground/80 font-medium font-main py-8 sm:py-16 md:py-24 lowercase">
+      <Toast />
       <div className="w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto flex flex-col px-4 sm:px-6 md:px-0">
         <p>
           welcome to my <span className="highlight">corner</span> of the
