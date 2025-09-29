@@ -1,5 +1,7 @@
 import { Divider } from "@/components";
 import { ACHIEVEMENTS, EXPERIENCES, LINKS, PROJECTS, SKILLS } from "@/lib";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,19 +9,22 @@ export default function Home() {
     value.includes('data-safe="highlight"');
 
   return (
-    <main className="min-h-screen w-full bg-background text-foreground/80 font-medium font-main py-16 sm:py-20 md:py-24 lowercase">
+    <main className="min-h-screen w-full bg-background text-foreground/80 font-medium font-main py-8 sm:py-16 md:py-24 lowercase">
       <div className="w-full max-w-2xl xl:max-w-3xl 2xl:max-w-4xl mx-auto flex flex-col px-4 sm:px-6 md:px-0">
         <p>
           welcome to my <span className="highlight">corner</span> of the
           internet!
         </p>
 
-        <div className="w-full h-64 sm:h-80 md:h-96 rounded-sm border border-neutral-400/40 border-dashed p-1 relative my-6">
-          <img
-            src="/bg.png"
-            className="w-full h-full rounded-sm opacity-40 grayscale object-cover"
-            alt="background"
-          />
+        <div className="w-full h-64 sm:h-80 md:h-96 rounded-sm border border-neutral-400/40 border-dashed relative my-6 p-1">
+          <div className="w-full h-full rounded-sm overflow-hidden relative">
+            <Image
+              src="/bg.webp"
+              alt="background"
+              fill
+              className="rounded-sm opacity-40 object-cover"
+            />
+          </div>
         </div>
 
         <p className="leading-6">
@@ -60,9 +65,15 @@ export default function Home() {
           </p>
           {EXPERIENCES.map((exp, index) => (
             <div key={index} className="flex flex-col gap-1">
-              <p className="text-base sm:text-[16px] font-semibold text-foreground">
+              <Link
+                target="_blank"
+                rel="norefferer"
+                href={exp.link}
+                className="font-semibold text-foreground hover:underline flex items-center gap-1"
+              >
                 {exp.title}
-              </p>
+                <ArrowUpRight size={18} />
+              </Link>
               <div className="flex flex-col gap-1">
                 {exp.items.map((item, idx) => (
                   <div
@@ -107,14 +118,15 @@ export default function Home() {
           </p>
           {PROJECTS.map((proj, index) => (
             <div key={index} className="flex flex-col gap-1">
-              <a
-                href={proj.url}
+              <Link
                 target="_blank"
-                rel="noopener noreferrer"
-                className="text-base sm:text-[16px] font-semibold text-foreground hover:underline"
+                rel="norefferer"
+                href={proj.url}
+                className="font-semibold text-foreground hover:underline flex items-center gap-1"
               >
                 {proj.title}
-              </a>
+                <ArrowUpRight size={18} />
+              </Link>
               <div className="flex gap-3 items-baseline text-base sm:text-[16px] leading-snug">
                 <span className="text-orange-600 font-semibold">-</span>
                 <p>{proj.description}</p>

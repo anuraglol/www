@@ -1,12 +1,11 @@
 export const LINKS = [
-  { name: "resume", href: "/Anurag_Resume.pdf" },
   { name: "github", href: "https://github.com/anuraglol" },
   { name: "twitter", href: "https://twitter.com/imanuraglol" },
   { name: "email", href: "mailto:anurag2408@proton.me" },
 ];
 
 export const highlight = (text: string) =>
-  `<span data-safe="highlight" class="highlight text-foreground not-italic">${text}</span>`;
+  `<span data-safe="highlight" class="highlight text-foreground">${text}</span>`;
 
 export const ACHIEVEMENTS = [
   `${highlight("CandyPay")} secured 4th place in the Payments track of the ${highlight(
@@ -34,6 +33,7 @@ export const ACHIEVEMENTS = [
 export const EXPERIENCES = [
   {
     title: "Lead Engineer at CandyPay",
+    link: "https://twitter.com/candypayfun",
     items: [
       "Built two production-ready web apps: a user dashboard and a checkout platform",
       "Designed and developed the frontend architecture from scratch",
@@ -43,6 +43,7 @@ export const EXPERIENCES = [
   },
   {
     title: "Developer at Metapass",
+    link: "https://twitter.com/metapasshq",
     items: [
       "Contributed to the development of a blockchain-based ticketing platform on Solana",
       "Helped build and maintain user-facing components for the event creation and ticketing flow",
@@ -51,6 +52,7 @@ export const EXPERIENCES = [
   },
   {
     title: "Technical Writer",
+    link: "https://anuragkr.hashnode.dev",
     items: [
       "Wrote developer-focused technical articles covering web development, tooling, and Web3 concepts.",
       "Published on Hashnode and Dev.to, collectively reaching over 60,000 readers.",

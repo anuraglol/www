@@ -190,6 +190,6 @@
     }
 
     .highlight {
-        @apply text-orange-500 italic;
+        @apply text-orange-500;
     }
 }
