@@ -43,7 +43,7 @@ export const Toast = () => {
             width={24}
             height={24}
             className="rounded-full"
-            quality={50}
+            quality={30}
             priority
           />
           <p>senpai noticed you!</p>
