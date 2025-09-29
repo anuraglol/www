@@ -30,11 +30,7 @@ export default function Home() {
         </div>
 
         <p className="leading-6">
-          ohayo! im{" "}
-          <div className="absolute -top-6 left-1 animate-bounce pointer-events-none">
-            <Image src="/1.gif" alt="cursor" width={32} height={32} />
-          </div>
-          <FancyHover />
+          ohayo! im <FancyHover />
           [he/him]. i am an undergraduate student at{" "}
           <span className="highlight">nit durgapur</span>, pursuing{" "}
           <span className="highlight">biotechnology</span>. with over 4 years of

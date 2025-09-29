@@ -60,15 +60,14 @@ export const FancyHover = () => {
       <HoverCardTrigger asChild>
         <span className="highlight relative inline-block">
           anurag
-          <span className="absolute -top-2 left-1 pointer-events-none">
-            <Image
-              src="/1.gif"
-              alt="floating cursor"
-              width={20}
-              height={20}
-              priority
-            />
-          </span>
+          <Image
+            src="/1.gif"
+            alt="floating cursor"
+            width={20}
+            height={20}
+            priority
+            className="animate-bounce absolute -top-2 left-1"
+          />
         </span>
       </HoverCardTrigger>
 
