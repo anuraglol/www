@@ -72,7 +72,7 @@ export const PROJECTS = [
     title: "1008 ventures",
     description:
       "a fast moving venture studio building products in web3 and ai.",
-    url: "https://sahil-pearl.vercel.app",
+    url: "https://1008.ventures",
   },
   {
     title: "React & Next.js Snippets (VSCode ext)",
