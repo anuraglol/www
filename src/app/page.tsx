@@ -30,8 +30,17 @@ export default function Home() {
         </div>
 
         <p className="leading-6">
-          ohayo! im <FancyHover />
-          {" "}[he/him]. i am an undergraduate student at{" "}
+          ohayo! im <FancyHover /> [he/him] - currently working as a design
+          engineer at{" "}
+          <Link
+            href="https://cleopetra.fun"
+            target="_blank"
+            rel="noopener norefferer"
+            className="highlight"
+          >
+            @cleopetra
+          </Link>{" "}
+          <br /> i am an undergraduate student at{" "}
           <span className="highlight">nit durgapur</span>, pursuing{" "}
           <span className="highlight">biotechnology</span>. with over 4 years of
           experience in web engineering, i&apos;ve worked on a range of projects
