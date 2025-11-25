@@ -32,6 +32,11 @@ export const ACHIEVEMENTS = [
 
 export const EXPERIENCES = [
   {
+    title: "Design Engineer at Cleopetra",
+    link: "https://cleopetra.fun",
+    items: ["currently cooking..."],
+  },
+  {
     title: "Lead Engineer at CandyPay",
     link: "https://twitter.com/candypayfun",
     items: [
