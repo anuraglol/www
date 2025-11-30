@@ -40,7 +40,9 @@ export default function Home() {
           >
             @cleopetra
           </Link>{" "}
-          <br /> i am an undergraduate student at{" "}
+        </p>
+        <p className="mt-3 leading-6">
+          i am an undergraduate student at{" "}
           <span className="highlight">nit durgapur</span>, pursuing{" "}
           <span className="highlight">biotechnology</span>. with over 4 years of
           experience in web engineering, i&apos;ve worked on a range of projects
