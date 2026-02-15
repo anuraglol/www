@@ -1,0 +1,15 @@
+export const GALLERY_IMAGES = [
+  { id: "www/IMG_0143_iszgq2", width: 3000, height: 4000 },
+  { id: "www/IMG_0340_wy9f1p", width: 4284, height: 5712 },
+  { id: "www/IMG_0675_wyk3qu", width: 6048, height: 8064 },
+  { id: "www/IMG_0784_om1f05", width: 6048, height: 8064 },
+  { id: "www/IMG_0759_jhl17p", width: 3024, height: 4032 },
+  { id: "www/IMG_0227_fuiiqy", width: 5712, height: 4284 },
+  { id: "www/IMG_0318_cut0yo", width: 3024, height: 4032 },
+  { id: "www/IMG_0160_dqzsww", width: 4000, height: 3000 },
+  { id: "www/IMG_0168_k1eszh", width: 2304, height: 4096 },
+  { id: "www/IMG_0147_svu26b", width: 1200, height: 1600 },
+  { id: "www/IMG_0190_feu4jd", width: 4160, height: 3120 },
+  { id: "www/IMG_0082_kx2a9k", width: 5712, height: 4284 },
+  { id: "www/IMG_0166_nxylls", width: 3072, height: 4096 },
+];
