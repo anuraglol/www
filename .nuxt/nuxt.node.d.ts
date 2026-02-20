@@ -1,5 +1,5 @@
-/// <reference types="@nuxt/ui" />
 /// <reference types="@peterbud/nuxt-query" />
+/// <reference types="@nuxt/ui" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/image" />
 /// <reference types="@nuxt/telemetry" />
