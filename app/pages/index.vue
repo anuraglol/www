@@ -18,7 +18,7 @@ const isSafeHtml = (value: string): boolean =>
       </p>
 
       <div
-        class="w-full h-64 sm:h-80 md:h-96 rounded-sm border border-neutral-400/40 border-dashed relative my-6 p-1"
+        class="h-full w-full h-32 sm:h-80 md:h-96 rounded-sm border border-neutral-400/40 border-dashed relative my-6 p-1"
       >
         <div class="w-full h-full rounded-sm overflow-hidden relative">
           <img
@@ -172,4 +172,4 @@ const isSafeHtml = (value: string): boolean =>
       </p>
     </div>
   </main>
-</template>
+</template

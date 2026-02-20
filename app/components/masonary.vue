@@ -59,10 +59,10 @@ const markError = (id: string) => {
           v-if="!errorImages[img.id]"
           provider="cloudinary"
           :src="img.id"
-          :width="img.width"
-          :height="img.height"
+          :width="img.width/4"
+          :height="img.height/4"
           format="webp"
-          quality="80"
+          quality="60"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           fit="cover"
           loading="lazy"
@@ -83,9 +83,3 @@ const markError = (id: string) => {
   </div>
 </template>
 
-<style scoped>
-/*
-  No custom CSS needed for layout.
-  Tailwind utilities handle everything.
-*/
-</style>
