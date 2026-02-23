@@ -1,7 +1,7 @@
 export const LINKS = [
   { name: "github", href: "https://github.com/anuraglol" },
   { name: "twitter", href: "https://twitter.com/imanuraglol" },
-  { name: "email", href: "mailto:anurag2408@proton.me" },
+  { name: "email", href: "mailto:hi@anurag.tech" },
 ];
 
 export const highlight = (text: string) =>
