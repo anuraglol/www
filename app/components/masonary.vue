@@ -69,11 +69,11 @@ const markError = (id: string) => {
           :quality="img.height > 2000 && img.width > 2000 ? 60 : 80"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           fit="cover"
-          loading="lazy"
           class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
           :class="[loadedImages[img.public_id] ? 'opacity-100' : 'opacity-0']"
           @load="markLoaded(img.public_id)"
           @error="markError(img.public_id)"
+          :fetchPriority="IMAGES.indexOf(img) < 3 ? 'high' : 'auto'"
         />
 
         <div
