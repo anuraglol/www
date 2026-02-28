@@ -21,8 +21,10 @@
     "@nuxt/ui": "^4.4.0",
     "@peterbud/nuxt-query": "^1.5.2",
     "@tanstack/vue-query": "^5.92.9",
+    "cloudinary": "^2.9.0",
     "nuxt": "^4.3.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "oxfmt": "^0.31.0",

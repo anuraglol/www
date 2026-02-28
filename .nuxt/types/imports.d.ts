@@ -129,13 +129,13 @@ declare global {
   const useCookie: typeof import('../../node_modules/nuxt/dist/app/composables/cookie').useCookie
   const useCssModule: typeof import('../../node_modules/vue').useCssModule
   const useCssVars: typeof import('../../node_modules/vue').useCssVars
-  const useData: typeof import('../../app/composables/useData').useData
   const useEditorMenu: typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useEditorMenu').useEditorMenu
   const useError: typeof import('../../node_modules/nuxt/dist/app/composables/error').useError
   const useFetch: typeof import('../../node_modules/nuxt/dist/app/composables/fetch').useFetch
   const useFieldGroup: typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useFieldGroup').useFieldGroup
   const useFileUpload: typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useFileUpload').useFileUpload
   const useFormField: typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useFormField').useFormField
+  const useGallery: typeof import('../../app/composables/useGallery').useGallery
   const useHead: typeof import('../../node_modules/nuxt/dist/app/composables/head').useHead
   const useHeadSafe: typeof import('../../node_modules/nuxt/dist/app/composables/head').useHeadSafe
   const useHydration: typeof import('../../node_modules/nuxt/dist/app/composables/hydrate').useHydration
@@ -359,13 +359,13 @@ declare module 'vue' {
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/vue')['useCssVars']>
-    readonly useData: UnwrapRef<typeof import('../../app/composables/useData')['useData']>
     readonly useEditorMenu: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useEditorMenu')['useEditorMenu']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/error')['useError']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
     readonly useFieldGroup: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useFieldGroup')['useFieldGroup']>
     readonly useFileUpload: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useFileUpload')['useFileUpload']>
     readonly useFormField: UnwrapRef<typeof import('../../node_modules/@nuxt/ui/dist/runtime/composables/useFormField')['useFormField']>
+    readonly useGallery: UnwrapRef<typeof import('../../app/composables/useGallery')['useGallery']>
     readonly useHead: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useHeadSafe']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>

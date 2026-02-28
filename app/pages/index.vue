@@ -3,6 +3,8 @@ import { EXPERIENCES, LINKS, PROJECTS, SKILLS, ACHIEVEMENTS } from "~/utils";
 
 const isSafeHtml = (value: string): boolean =>
   value.includes('data-safe="highlight"');
+
+useGallery();
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const isSafeHtml = (value: string): boolean =>
       </p>
 
       <div
-        class="h-full w-full h-32 sm:h-80 md:h-96 rounded-sm border border-neutral-400/40 border-dashed relative my-6 p-1"
+        class="w-full h-32 sm:h-80 md:h-96 rounded-sm border border-neutral-400/40 border-dashed relative my-6 p-1"
       >
         <div class="w-full h-full rounded-sm overflow-hidden relative">
           <img
@@ -32,7 +34,7 @@ const isSafeHtml = (value: string): boolean =>
       </div>
 
       <p class="leading-6">
-        ohayo! im <Hover /> [he/him] - currently working as a design engineer at
+        ohayo! im <Hover /> [he/him] - previously a design engineer
         <a
           href="https://cleopetra.fun"
           target="_blank"

@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { EXPERIENCES, LINKS, PROJECTS, SKILLS, ACHIEVEMENTS } from "~/utils";
-
-const isSafeHtml = (value: string): boolean =>
-  value.includes('data-safe="highlight"');
+const { suspense } = useGallery();
+await suspense();
 </script>
 
 <template>

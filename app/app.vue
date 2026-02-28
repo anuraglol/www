@@ -1,10 +1,13 @@
 <script setup>
 useHead({
   meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
-  link: [{ rel: "icon", href: "/favicon.ico" }, {
+  link: [
+    { rel: "icon", href: "/favicon.ico" },
+    {
       rel: "canonical",
       href: "https://anurag.tech",
-    }],
+    },
+  ],
   htmlAttrs: {
     lang: "en",
   },
@@ -36,7 +39,7 @@ useSeoMeta({
     "Frontend-focused web engineer & Web3 enthusiast. Undergraduate at NIT Durgapur.",
   twitterImage: "https://anurag.tech/bg.webp",
   twitterCreator: "@imanuraglol",
-})
+});
 </script>
 
 <template>

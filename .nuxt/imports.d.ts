@@ -30,7 +30,7 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
-export { useData } from '../app/composables/useData';
+export { useGallery } from '../app/composables/useGallery';
 export { GALLERY_IMAGES } from '../app/utils/images';
 export { LINKS, highlight, ACHIEVEMENTS, EXPERIENCES, SKILLS, PROJECTS } from '../app/utils/index';
 export { defineLocale, extendLocale } from '../node_modules/@nuxt/ui/dist/runtime/composables/defineLocale';

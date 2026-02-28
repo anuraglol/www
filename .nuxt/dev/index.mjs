@@ -5,6 +5,8 @@ import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
 import { escapeHtml } from 'file:///home/anurag/Documents/dev/www/node_modules/@vue/shared/dist/shared.cjs.js';
+import { v2 } from 'file:///home/anurag/Documents/dev/www/node_modules/cloudinary/cloudinary.js';
+import { z } from 'file:///home/anurag/Documents/dev/www/node_modules/zod/index.js';
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///home/anurag/Documents/dev/www/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file:///home/anurag/Documents/dev/www/node_modules/ufo/dist/index.mjs';
 import destr, { destr as destr$1 } from 'file:///home/anurag/Documents/dev/www/node_modules/destr/dist/index.mjs';
@@ -2486,7 +2488,22 @@ _X7qsv2LQwcYGRggnNvuxWLh4r0aMN4_q1XylJxKcC2Q,
 _CUbRjGzLNYmOUjqYkdSqFqMYFkF9APTDI1y0H9OlZg8
 ];
 
-const assets = {};
+const assets = {
+  "/index.mjs": {
+    "type": "text/javascript; charset=utf-8",
+    "etag": "\"1d0ad-ltOVCTsNkCHsmzvpeZYXOf3fvKQ\"",
+    "mtime": "2026-02-28T07:16:57.899Z",
+    "size": 118957,
+    "path": "index.mjs"
+  },
+  "/index.mjs.map": {
+    "type": "application/json",
+    "etag": "\"6e97b-pYpFbFp48ac0rUAz5y+ssq4HDaM\"",
+    "mtime": "2026-02-28T07:16:57.899Z",
+    "size": 452987,
+    "path": "index.mjs.map"
+  }
+};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
@@ -3068,10 +3085,12 @@ const _R_bw3A = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
+const _lazy_64UfzB = () => Promise.resolve().then(function () { return gallery_get$1; });
 const _lazy_YfGIlx = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '', handler: _cFzwUx, lazy: false, middleware: true, method: undefined },
+  { route: '/api/gallery', handler: _lazy_64UfzB, lazy: true, middleware: false, method: "get" },
   { route: '/__nuxt_error', handler: _lazy_YfGIlx, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
   { route: '/api/_nuxt_icon/:collection', handler: _R_bw3A, lazy: false, middleware: false, method: undefined },
@@ -3338,6 +3357,38 @@ const styles = {};
 const styles$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   default: styles
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const gallery_get = defineEventHandler(async () => {
+  v2.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+  });
+  const result = await v2.api.resources({
+    type: "upload",
+    prefix: "clicks/",
+    max_results: 100
+  });
+  const schema = z.object({
+    resources: z.array(
+      z.object({
+        public_id: z.string(),
+        width: z.number(),
+        height: z.number()
+      })
+    )
+  });
+  return {
+    resources: schema.parse(result).resources.sort((a, b) => {
+      return a.public_id.localeCompare(b.public_id);
+    })
+  };
+});
+
+const gallery_get$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: gallery_get
 }, Symbol.toStringTag, { value: 'Module' }));
 
 function renderPayloadResponse(ssrContext) {
