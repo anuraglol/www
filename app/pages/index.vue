@@ -45,13 +45,8 @@ useGallery();
         </a>
       </p>
       <p class="mt-3 leading-6">
-        i am an undergraduate student at
-        <span class="highlight">nit durgapur</span>, pursuing
-        <span class="highlight">biotechnology</span>. with over 4 years of
-        experience in web engineering, i&apos;ve worked on a range of projects
-        within the web3 ecosystem. i specialize in frontend development,
-        focusing on building clean, scalable web applications that enhance user
-        experiences.
+          i’m an undergraduate at <span class="highlight">nit durgapur</span>, currently pursuing <span class="highlight">biotechnology</span>. alongside that, i’ve spent the past 4+ years working in web engineering, building products across the web3 ecosystem.
+          i specialize in frontend development, focusing on clean architecture and scalable web applications. i’ve worked on production systems including trading interfaces, payment infrastructure, and developer tooling used by thousands of developers.
       </p>
 
       <p class="mt-3 leading-6">
