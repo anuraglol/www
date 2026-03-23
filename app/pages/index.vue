@@ -46,15 +46,15 @@ useGallery();
       </p>
 
       <p class="mt-3 leading-6">
-        i’m a fullstack engineer with over 4 years of experience building around the web.
-        i’m an undergraduate at <span class="highlight">nit durgapur</span>, currently pursuing <span class="highlight">biotechnology</span>. alongside that, i’ve spent the past 4+ years working in web engineering, building products across the web3 ecosystem.
-        i specialize in frontend development, focusing on clean architecture and scalable web applications. i’ve worked on production systems including trading interfaces, payment infrastructure, and developer tooling used by thousands of developers.
+        i'm a fullstack engineer and an undergraduate at <span class="highlight">nit durgapur</span>,
+        studying <span class="highlight">biotechnology</span>. over the past 4+ years, i've been building
+        across the web3 ecosystem: trading interfaces, payment infrastructure, and developer tooling
+        used by thousands. i specialize in frontend development, with a focus on clean architecture
+        and scalable web applications.
       </p>
-
       <p class="mt-3 leading-6">
-        thanks for stopping by! leaving the technical jargon behind, im an avid
-        reader, mostly reading fiction. i enjoy playing around with different
-        linux distros & i do maths for fun when im bored.
+        thanks for stopping by! outside of work, i'm an avid reader, mostly fiction. i enjoy
+        tinkering with linux distros and doing maths for fun when i'm bored.
       </p>
 
       <div class="flex flex-wrap gap-4 items-center text-orange-600 mt-6">
