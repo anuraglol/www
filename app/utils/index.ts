@@ -9,24 +9,24 @@ export const highlight = (text: string) =>
 
 export const ACHIEVEMENTS = [
   `${highlight("CandyPay")} secured 4th place in the Payments track of the ${highlight(
-    "Solana Summer Camp Hackathon"
+    "Solana Summer Camp Hackathon",
   )}, with over ${highlight("18,000")} participants and ${highlight(
-    "750"
+    "750",
   )} submissions, and received grants from the Solana Foundation.`,
   `${highlight("CandyPay")} processed over ${highlight("$120,000")} in transactions.`,
   `Won ${highlight("2 global-level hackathons")}, showcasing innovation in Web3 and beyond.`,
   `${highlight("CandyPay")} was adopted by ${highlight(
-    "Próspera Global"
+    "Próspera Global",
   )} for crypto-based tax payments and by ${highlight(
-    "Boba Guys"
+    "Boba Guys",
   )} for enabling crypto payments.`,
   `${highlight(
-    "Caramel"
+    "Caramel",
   )}, a project that acts as a proof-of-work for monetization of npm packages, which can be purchased via cryptocurrency, with payment processing handled through ${highlight(
-    "CandyPay"
+    "CandyPay",
   )}, won the Solana Sandstorm Hackathon.`,
   `Authored articles with ${highlight(
-    "60,000+ views"
+    "60,000+ views",
   )} on <a href="https://anuragkr.hashnode.dev/" class="external-link" target="_blank" rel="noopener noreferrer">Hashnode</a> and <a href="https://dev.to/kranurag" class="external-link" target="_blank" rel="noopener noreferrer">Dev.to</a>, covering web development and Web3 topics.`,
 ];
 
@@ -69,7 +69,7 @@ export const EXPERIENCES = [
 ];
 
 export const SKILLS = [
-  `${highlight("Languages")}: JavaScript (TypeScript), Elixir`,
+  `${highlight("Languages")}: JavaScript (TypeScript), Golang`,
   `${highlight("Frameworks/Libraries")}: Next.js (React), Nuxt.js (Vue), Svelte, Hono`,
   `${highlight("Databases")}: PostgreSQL, MySQL`,
   `${highlight("Tools")}: Node.js`,
