@@ -158,7 +158,7 @@ useGallery();
           <div
             v-for="(skill, index) in SKILLS"
             :key="index"
-            class="flex gap-2 items-center text-base sm:text-[16px]"
+            class="flex gap-2 text-base sm:text-[16px] items-baseline "
           >
             <span class="text-black font-semibold">-</span>
             <p v-if="isSafeHtml(skill)" v-html="skill" />

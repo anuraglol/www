@@ -69,7 +69,7 @@ export const EXPERIENCES = [
 ];
 
 export const SKILLS = [
-  `${highlight("Languages")}: JavaScript (TypeScript), Golang`,
+  `${highlight("Languages")}: Typescript, Golang`,
   `${highlight("Frameworks/Libraries")}: Next.js (React), Nuxt.js (Vue), Svelte, Hono`,
   `${highlight("Databases")}: PostgreSQL, MySQL`,
   `${highlight("Tools")}: Node.js`,
