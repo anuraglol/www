@@ -1,15 +1,72 @@
-export const GALLERY_IMAGES = [
-  { id: "www/IMG_0143_iszgq2", width: 3000, height: 4000 },
-  { id: "www/IMG_0340_wy9f1p", width: 4284, height: 5712 },
-  { id: "www/IMG_0675_wyk3qu", width: 6048, height: 8064 },
-  { id: "www/IMG_0784_om1f05", width: 6048, height: 8064 },
-  { id: "www/IMG_0759_jhl17p", width: 3024, height: 4032 },
-  { id: "www/IMG_0227_fuiiqy", width: 5712, height: 4284 },
-  { id: "www/IMG_0318_cut0yo", width: 3024, height: 4032 },
-  { id: "www/IMG_0160_dqzsww", width: 4000, height: 3000 },
-  { id: "www/IMG_0168_k1eszh", width: 2304, height: 4096 },
-  { id: "www/IMG_0147_svu26b", width: 1200, height: 1600 },
-  { id: "www/IMG_0190_feu4jd", width: 4160, height: 3120 },
-  { id: "www/IMG_0082_kx2a9k", width: 5712, height: 4284 },
-  { id: "www/IMG_0166_nxylls", width: 3072, height: 4096 },
+export const FALLBACK_IMAGES = [
+  {
+    public_id: "clicks/001_lamp",
+    width: 4344,
+    height: 5792,
+  },
+  {
+    public_id: "clicks/001_sunset",
+    width: 1536,
+    height: 2048,
+  },
+  {
+    public_id: "clicks/003_leaves",
+    width: 1536,
+    height: 2048,
+  },
+  {
+    public_id: "clicks/004_bloom",
+    width: 4344,
+    height: 5792,
+  },
+  {
+    public_id: "clicks/005_eve",
+    width: 5712,
+    height: 4284,
+  },
+  {
+    public_id: "clicks/006_sun",
+    width: 1200,
+    height: 1600,
+  },
+  {
+    public_id: "clicks/007_stars",
+    width: 1536,
+    height: 2048,
+  },
+  {
+    public_id: "clicks/IMG_0160_qercve",
+    width: 4000,
+    height: 3000,
+  },
+  {
+    public_id: "clicks/IMG_0166_ctyd7i",
+    width: 3072,
+    height: 4096,
+  },
+  {
+    public_id: "clicks/IMG_0168_zhdxrq",
+    width: 2304,
+    height: 4096,
+  },
+  {
+    public_id: "clicks/IMG_0190_rqynz6",
+    width: 4160,
+    height: 3120,
+  },
+  {
+    public_id: "clicks/IMG_0227_tnlip6",
+    width: 2048,
+    height: 1536,
+  },
+  {
+    public_id: "clicks/IMG_0318_au8oww",
+    width: 1536,
+    height: 2048,
+  },
+  {
+    public_id: "clicks/IMG_0860_mllwte",
+    width: 4344,
+    height: 5792,
+  },
 ];

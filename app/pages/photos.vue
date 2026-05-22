@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const { suspense } = useGallery();
 await suspense();
-</script>
+</script> -->
 
 <template>
   <main

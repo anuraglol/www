@@ -4,7 +4,7 @@ import { EXPERIENCES, LINKS, PROJECTS, SKILLS, ACHIEVEMENTS } from "~/utils";
 const isSafeHtml = (value: string): boolean =>
   value.includes('data-safe="highlight"');
 
-useGallery();
+// useGallery();
 </script>
 
 <template>
