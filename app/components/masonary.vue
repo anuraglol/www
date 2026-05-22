@@ -48,7 +48,7 @@ const markError = (id: string) => {
           :width="img.width"
           :height="img.height"
           format="webp"
-          :quality="img.height > 2000 && img.width > 2000 ? 60 : 80"
+          :quality="img.height > 2000 && img.width > 2000 ? 40 : 60"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           fit="cover"
           class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
