@@ -30,11 +30,6 @@ export const FALLBACK_IMAGES = [
     height: 1600,
   },
   {
-    public_id: "clicks/007_stars",
-    width: 1536,
-    height: 2048,
-  },
-  {
     public_id: "clicks/IMG_0160_qercve",
     width: 4000,
     height: 3000,
@@ -65,8 +60,23 @@ export const FALLBACK_IMAGES = [
     height: 2048,
   },
   {
-    public_id: "clicks/IMG_0860_mllwte",
-    width: 4344,
-    height: 5792,
+    public_id: "clicks/IMG_1293_vbzkls",
+    width: 6048,
+    height: 8064,
+  },
+  {
+    public_id: "clicks/IMG_1859_fdos7g",
+    width: 4032,
+    height: 3024,
+  },
+  {
+    public_id: "clicks/IMG_1870_megfsc",
+    width: 4032,
+    height: 3024,
+  },
+  {
+    public_id: "clicks/IMG_1871_cce8ac",
+    width: 3024,
+    height: 4032,
   },
 ];

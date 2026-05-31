@@ -1,32 +1,60 @@
-import { v2 as cloudinary } from "cloudinary";
+export const runtime = "edge";
+
 import { z } from "zod";
 
-export default defineEventHandler(async () => {
-  cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
-  });
+const ResourceSchema = z.object({
+  resources: z.array(
+    z.object({
+      public_id: z.string(),
+      width: z.number(),
+      height: z.number(),
+    }),
+  ),
+});
 
-  const result = await cloudinary.api.resources({
+export default defineEventHandler(async () => {
+  const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
+  const apiKey = process.env.CLOUDINARY_API_KEY;
+  const apiSecret = process.env.CLOUDINARY_API_SECRET;
+
+  if (!cloudName || !apiKey || !apiSecret) {
+    throw createError({ statusCode: 500, message: "Missing Cloudinary config" });
+  }
+
+  const credentials = btoa(`${apiKey}:${apiSecret}`);
+  const params = new URLSearchParams({
     type: "upload",
     prefix: "clicks/",
-    max_results: 100,
+    max_results: "100",
   });
 
-  const schema = z.object({
-    resources: z.array(
-      z.object({
-        public_id: z.string(),
-        width: z.number(),
-        height: z.number(),
-      }),
-    ),
-  });
+  const res = await fetch(
+    `https://api.cloudinary.com/v1_1/${cloudName}/resources/image?${params}`,
+    {
+      headers: {
+        Authorization: `Basic ${credentials}`,
+      },
+    },
+  );
+
+  if (!res.ok) {
+    throw createError({
+      statusCode: res.status,
+      message: `Cloudinary error: ${res.statusText}`,
+    });
+  }
+
+  const json = await res.json();
+  const parsed = ResourceSchema.safeParse(json);
+
+  if (!parsed.success) {
+    throw createError({
+      statusCode: 502,
+      message: "Unexpected Cloudinary response shape",
+    });
+  }
 
   return {
-    resources: schema.parse(result).resources.sort((a, b) => {
-      return a.public_id.localeCompare(b.public_id);
-    }),
+    resources: parsed.data.resources.sort((a, b) => a.public_id.localeCompare(b.public_id)),
   };
 });
