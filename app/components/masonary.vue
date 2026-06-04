@@ -50,11 +50,13 @@ const markError = (id: string) => {
           format="webp"
           :quality="img.height > 2000 && img.width > 2000 ? 40 : 60"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          densities="x1 x2"
           fit="cover"
           class="absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out"
           :class="[loadedImages[img.public_id] ? 'opacity-100' : 'opacity-0']"
           @load="markLoaded(img.public_id)"
           @error="markError(img.public_id)"
+          :loading="idx < 3 ? 'eager' : 'lazy'"
           :fetchPriority="idx < 3 ? 'high' : 'auto'"
         />
 

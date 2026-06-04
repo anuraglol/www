@@ -1,16 +1,29 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const open = ref(false);
-const supportsHover = ref(true);
+const supportsHover = ref(false);
 const hoverTimeout = ref<number | null>(null);
 const closeTimeout = ref<number | null>(null);
+const rootRef = ref<HTMLElement | null>(null);
 
 onMounted(() => {
   if (typeof window !== "undefined") {
     supportsHover.value = window.matchMedia("(hover: hover)").matches;
   }
+  document.addEventListener("click", handleDocumentClick);
 });
+
+onUnmounted(() => {
+  document.removeEventListener("click", handleDocumentClick);
+});
+
+const handleDocumentClick = (e: MouseEvent) => {
+  if (!open.value || supportsHover.value) return;
+  if (rootRef.value && !rootRef.value.contains(e.target as Node)) {
+    open.value = false;
+  }
+};
 
 const handleMouseEnter = () => {
   if (!supportsHover.value) return;
@@ -46,7 +59,7 @@ const handleClick = () => {
 </script>
 
 <template>
-  <span class="relative inline-block">
+  <span ref="rootRef" class="relative inline-block">
     <span
       class="highlight relative inline-block cursor-pointer"
       @mouseenter="handleMouseEnter"

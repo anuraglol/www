@@ -1,7 +1,11 @@
-<!-- <script setup lang="ts">
-const { suspense } = useGallery();
-await suspense();
-</script> -->
+<script setup lang="ts">
+useHead({
+  link: [
+    { rel: "preconnect", href: "https://res.cloudinary.com" },
+    { rel: "dns-prefetch", href: "https://res.cloudinary.com" },
+  ],
+});
+</script>
 
 <template>
   <main

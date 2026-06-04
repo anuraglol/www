@@ -3,6 +3,10 @@
 This repository contains a **Nuxt 4** application using **Vue 3** and **TypeScript**.
 Coding agents should follow these guidelines to maintain consistency and quality.
 
+## Dont add comments like ever
+
+## Always make sure loc in any file is <250, break into components if necessary
+
 ## 1. Build, Lint, and Test
 
 The project uses **Bun** as the package manager (indicated by `bun.lock`).
