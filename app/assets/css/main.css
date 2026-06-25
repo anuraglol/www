@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
-@import "./prose.css";
 
 @theme static {
   --font-sans:
