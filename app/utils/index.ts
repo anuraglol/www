@@ -30,6 +30,10 @@ export const ACHIEVEMENTS = [
 
 export const EXPERIENCES = [
   {
+    title: "Design Engineer at Benstalk (Ongoing)",
+    link: "https://beanstalk.fi",
+  },
+  {
     title: "Design Engineer at Cleopetra",
     link: "https://cleopetra.fun",
     items: [

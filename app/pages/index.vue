@@ -27,9 +27,9 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
       </div>
 
       <p class="leading-6">
-        ohayo! im <Hover /> [he/him] - previously a design engineer
-        <a href="https://cleopetra.fun" target="_blank" rel="noopener norefferer" class="highlight">
-          @cleopetra
+        ohayo! im <Hover /> [he/him] - currently a design engineer
+        <a href="https://beanstalk.fi" target="_blank" rel="noopener norefferer" class="highlight">
+          @beanstalk
         </a>
       </p>
 
