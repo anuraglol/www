@@ -1,0 +1,84 @@
+.prose-custom {
+  @apply text-foreground/80 leading-relaxed;
+}
+
+.prose-custom h1 {
+  @apply text-2xl sm:text-3xl font-semibold text-foreground mt-8 mb-4;
+}
+
+.prose-custom h2 {
+  @apply text-xl sm:text-2xl font-semibold text-foreground mt-8 mb-4;
+}
+
+.prose-custom h3 {
+  @apply text-lg sm:text-xl font-semibold text-foreground mt-6 mb-3;
+}
+
+.prose-custom p {
+  @apply mb-4 leading-relaxed;
+}
+
+.prose-custom a {
+  @apply text-orange-500 hover:underline;
+}
+
+.prose-custom strong {
+  @apply text-foreground font-medium;
+}
+
+.prose-custom em {
+  @apply italic;
+}
+
+.prose-custom ul {
+  @apply list-none mb-4 pl-0;
+}
+
+.prose-custom ol {
+  @apply list-none mb-4 pl-0;
+}
+
+.prose-custom li {
+  @apply flex gap-2 items-baseline mb-2;
+}
+
+.prose-custom li::before {
+  content: "-";
+  @apply text-orange-500 font-medium;
+}
+
+.prose-custom blockquote {
+  @apply border-l-2 border-orange-500 pl-4 italic text-foreground/60 my-4;
+}
+
+.prose-custom pre {
+  @apply rounded-sm overflow-x-auto my-4 text-sm;
+}
+
+.prose-custom code {
+  @apply font-mono text-sm;
+}
+
+.prose-custom :not(pre) > code {
+  @apply bg-foreground/5 px-1.5 py-0.5 rounded-sm text-orange-500;
+}
+
+.prose-custom hr {
+  @apply my-8 border-neutral-400/60 border-dashed border-t-[1.5px];
+}
+
+.prose-custom img {
+  @apply rounded-sm my-4;
+}
+
+.prose-custom table {
+  @apply w-full border-collapse my-4;
+}
+
+.prose-custom th {
+  @apply text-left font-medium text-foreground border-b border-foreground/20 pb-2;
+}
+
+.prose-custom td {
+  @apply py-2 border-b border-foreground/10;
+}
