@@ -88,7 +88,12 @@ const handleClick = () => {
         @mouseenter="handleMouseEnter"
         @mouseleave="handleMouseLeave"
       >
-        <img src="/beep.png" alt="anurag" loading="lazy" class="rounded-sm object-cover aspect-square" />
+        <img
+          src="/beep.png"
+          alt="anurag"
+          loading="lazy"
+          class="rounded-sm object-cover aspect-square"
+        />
       </div>
     </Transition>
   </span>

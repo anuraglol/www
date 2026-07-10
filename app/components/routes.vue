@@ -8,6 +8,5 @@ const route = useRoute();
     <NuxtLink to="/photos" :class="route.name === 'photos' ? 'text-blue-700' : ''"
       >/photos</NuxtLink
     >
-
   </div>
 </template>

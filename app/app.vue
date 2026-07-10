@@ -12,7 +12,13 @@ useHead({
   meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
   link: [
     { rel: "icon", href: "/favicon.ico" },
-    { rel: "preload", as: "font", type: "font/woff2", href: "/fonts/Satoshi-Variable.woff2", crossorigin: "" },
+    {
+      rel: "preload",
+      as: "font",
+      type: "font/woff2",
+      href: "/fonts/Satoshi-Variable.woff2",
+      crossorigin: "",
+    },
     { rel: "preconnect", href: "https://res.cloudinary.com" },
     { rel: "dns-prefetch", href: "https://res.cloudinary.com" },
     {

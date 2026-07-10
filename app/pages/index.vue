@@ -21,11 +21,16 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
 
       <p class="mt-3 leading-6">
         i'm a fullstack engineer and an undergraduate at
-        <span class="highlight">nit durgapur</span>, studying
-        <span class="highlight">biotechnology</span>. over the past 4+ years, i've been building
-        across the web3 ecosystem: trading interfaces, payment infrastructure, and developer tooling
-        used by thousands. i specialize in frontend development, with a focus on clean architecture
-        and scalable web applications.
+        <a
+          href="https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Durgapur"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="highlight"
+          >nit durgapur</a
+        >, studying <span class="highlight">biotechnology</span>. for the past 4+ years, i've been
+        building across the web, mainly the web3 ecosystem: trading interfaces, payment
+        infrastructure, and developer tooling used by thousands. i specialize in frontend
+        development, with a focus on clean architecture and scalable web applications.
       </p>
 
       <p class="mt-3 leading-6">
@@ -48,9 +53,9 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
 
       <Divider />
 
-      <section class="flex flex-col gap-3">
+      <section class="flex flex-col gap-5">
         <p class="text-lg sm:text-xl font-medium">experiences</p>
-        <div v-for="(exp, index) in EXPERIENCES" :key="index" class="flex flex-col gap-1">
+        <div v-for="(exp, index) in EXPERIENCES" :key="index" class="flex flex-col gap-2">
           <a
             target="_blank"
             rel="norefferer"
@@ -60,16 +65,7 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
             {{ exp.title }}
             <IconArrow />
           </a>
-          <div class="flex flex-col gap-1">
-            <div
-              v-for="(item, idx) in exp.items"
-              :key="idx"
-              class="flex gap-3 items-baseline sm:text-[16px]"
-            >
-              <span class="text-orange-600">-</span>
-              <p>{{ item }}</p>
-            </div>
-          </div>
+          <p v-if="exp.description" class="leading-6" v-html="exp.description" />
         </div>
       </section>
 
@@ -89,9 +85,9 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
 
       <Divider />
 
-      <section class="flex flex-col gap-3">
+      <section class="flex flex-col gap-5">
         <p class="text-lg sm:text-xl font-medium">projects / gigs</p>
-        <div v-for="(proj, index) in PROJECTS" :key="index" class="flex flex-col gap-1">
+        <div v-for="(proj, index) in PROJECTS" :key="index" class="flex flex-col gap-2">
           <a
             target="_blank"
             rel="norefferer"
@@ -101,10 +97,7 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
             {{ proj.title }}
             <IconArrow />
           </a>
-          <div class="flex gap-3 items-baseline text-base sm:text-[16px] leading-snug">
-            <span class="text-orange-600">-</span>
-            <p>{{ proj.description }}</p>
-          </div>
+          <p class="leading-6">{{ proj.description }}</p>
         </div>
       </section>
 
@@ -124,9 +117,7 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
         </div>
       </section>
 
-      <p class="text-center italic mt-6 mb-8">
-        and may the odds be ever in your favor :3
-      </p>
+      <p class="text-center italic mt-6 mb-8">and may the odds be ever in your favor :3</p>
     </div>
   </main>
 </template>

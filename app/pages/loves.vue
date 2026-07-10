@@ -16,12 +16,12 @@ useSeoMeta({
       <p>my <span class="highlight">reading</span> list and favorite media.</p>
 
       <p class="mt-3 leading-6">
-        i consume media the way some people collect stamps. aggressively, with no plan, and
-        entirely based on vibe. here's what i'm into right now —
+        i consume media the way some people collect stamps. aggressively, with no plan, and entirely
+        based on vibe. here's what i'm into right now —
         <span class="highlight">books</span>, <span class="highlight">anime</span>,
         <span class="highlight">manga</span>, <span class="highlight">shows</span>, and
-        <span class="highlight">movies</span>. this is what i'm currently reading / watching, not
-        a all time favorites list.
+        <span class="highlight">movies</span>. this is what i'm currently reading / watching, not a
+        all time favorites list.
       </p>
 
       <Divider />
@@ -42,9 +42,7 @@ useSeoMeta({
         </div>
       </section>
 
-      <p class="text-center italic mt-8 mb-8">
-        we all have our escapes :3
-      </p>
+      <p class="text-center italic mt-8 mb-8">we all have our escapes :3</p>
     </div>
   </main>
 </template>

@@ -41,9 +41,7 @@ useSeoMeta({
         </div>
       </section>
 
-      <p class="text-center italic mt-8 mb-8">
-        and yes, i use nixos btw :3
-      </p>
+      <p class="text-center italic mt-8 mb-8">and yes, i use nixos btw :3</p>
     </div>
   </main>
 </template>
