@@ -5,7 +5,7 @@ export const LINKS = [
 ];
 
 export const highlight = (text: string) =>
-  `<span data-safe="highlight" class="text-foreground">${text}</span>`;
+  `<span data-safe="highlight" class="text-foreground font-medium">${text}</span>`;
 
 export const ACHIEVEMENTS = [
   `${highlight("CandyPay")} secured 4th place in the Payments track of the ${highlight(
@@ -161,11 +161,6 @@ export const USES = [
 ];
 
 export const PROJECTS = [
-  {
-    title: "1008 ventures",
-    description: "a fast moving venture studio building products in web3 and ai.",
-    url: "https://1008.ventures",
-  },
   {
     title: "React & Next.js Snippets (VSCode ext)",
     description:
