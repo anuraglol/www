@@ -14,17 +14,12 @@
     "fmt:check": "oxfmt --check"
   },
   "dependencies": {
-    "@hebilicious/vue-query-nuxt": "^0.3.0",
-    "@iconify-json/lucide": "^1.2.89",
-    "@iconify-json/simple-icons": "^1.2.70",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.4.0",
-    "@peterbud/nuxt-query": "^1.5.2",
-    "@tanstack/vue-query": "^5.92.9",
-    "cloudinary": "^2.9.0",
+    "baseline-browser-mapping": "^2.10.42",
+    "caniuse-lite": "^1.0.30001803",
     "nuxt": "^4.3.1",
-    "tailwindcss": "^4.1.18",
-    "zod": "^4.3.6"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "oxfmt": "^0.31.0",

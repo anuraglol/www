@@ -1,13 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
-
-// const { data, isPending, error } = useGallery();
-
-// const IMAGES = computed(() =>
-//   !isPending.value && !error.value && data.value?.resources.length
-//     ? data.value.resources
-//     : FALLBACK_IMAGES,
-// );
+import { ref } from "vue";
 
 const loadedImages = ref<Record<string, boolean>>({});
 const errorImages = ref<Record<string, boolean>>({});

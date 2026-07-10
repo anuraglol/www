@@ -5,7 +5,7 @@ export const LINKS = [
 ];
 
 export const highlight = (text: string) =>
-  `<span data-safe="highlight" class="text-foreground font-medium">${text}</span>`;
+  `<span data-safe="highlight" class="text-foreground">${text}</span>`;
 
 export const ACHIEVEMENTS = [
   `${highlight("CandyPay")} secured 4th place in the Payments track of the ${highlight(
@@ -77,6 +77,89 @@ export const SKILLS = [
   `${highlight("Tools")}: Node.js`,
 ];
 
+export const FAVORITES = [
+  {
+    label: "books",
+    items: [
+      "The Hunger Games — Suzanne Collins",
+      "Harry Potter — J.K. Rowling",
+      "A Man Called Ove — Fredrik Backman",
+      "Tomorrow, and Tomorrow, and Tomorrow — Gabrielle Zevin",
+    ],
+  },
+  {
+    label: "movies",
+    items: [
+      "The Sky Is Pink",
+      "The Social Network",
+      "The Portrait of a Lady on Fire",
+      "The Lord of the Rings: The Two Towers",
+      "10 Things I Hate About You",
+    ],
+  },
+  {
+    label: "anime",
+    items: [
+      "Chainsaw Man",
+      "Takopi's Original Sin",
+      "Attack on Titan",
+      "Witch Hat Atelier",
+    ],
+  },
+  {
+    label: "manga",
+    items: ["Chainsaw Man"],
+  },
+  {
+    label: "shows",
+    items: ["New Girl", "Pluribus", "Modern Family"],
+  },
+];
+
+export const USES = [
+  {
+    label: "os & desktop",
+    items: [
+      "nixos — declarative, reproducible system config.",
+      "sway — tiling wayland compositor.",
+      "vicinae — launcher and clipboard history.",
+    ],
+  },
+  {
+    label: "terminal",
+    items: [
+      "kitty — terminal emulator.",
+      "fish — shell with autosuggestions.",
+      "tmux — persistent sessions.",
+    ],
+  },
+  {
+    label: "editor",
+    items: [
+      "zed — main editor with vim mode.",
+      "neovim — quick terminal edits.",
+    ],
+  },
+  {
+    label: "dev tools",
+    items: [
+      "bun — js runtime and package manager.",
+      "go — backend and cli.",
+      "nodejs — when the project needs it.",
+      "python — scripts and tooling.",
+    ],
+  },
+  {
+    label: "browser & apps",
+    items: [
+      "zen — daily driver browser.",
+      "firefox — fallback.",
+      "spotify — music.",
+      "mpv — video player.",
+    ],
+  },
+];
+
 export const PROJECTS = [
   {
     title: "1008 ventures",
@@ -94,5 +177,11 @@ export const PROJECTS = [
     description:
       "An image generation service that created custom NFTs for NAS Daily Summit attendees using @vercel/og.",
     url: "https://github.com/anuraglol/nas-summit-nft-gen",
+  },
+  {
+    title: "kotiri",
+    description:
+      "a tiny in-memory store like redis, built in golang. supports major redis operations and works with redis-cli.",
+    url: "https://github.com/anuraglol/kotiri",
   },
 ];

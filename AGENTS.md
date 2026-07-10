@@ -35,7 +35,6 @@ If you add tests:
 - **Nuxt Version:** Nuxt 4.x
 - **Language:** TypeScript
 - **UI Framework:** `@nuxt/ui` (Tailwind CSS based)
-- **Data Fetching:** `@tanstack/vue-query` (via `@hebilicious/vue-query-nuxt` or similar wrapper)
 - **Image Optimization:** `@nuxt/image` (`<NuxtImg>`)
 
 ### Directory Structure
@@ -106,15 +105,7 @@ export const useUser = () => {
 
 ### Data Fetching
 
-- Prefer `useQuery` from `@tanstack/vue-query` for server-state management (caching, invalidation).
-- Use `$fetch` for direct API calls inside query functions.
-- Example:
-  ```typescript
-  const { data } = useQuery({
-    queryKey: ["users"],
-    queryFn: async () => await $fetch("/api/users"),
-  });
-  ```
+- Use `$fetch` for direct API calls when needed.
 
 ### Linting & Formatting rules
 
@@ -124,8 +115,7 @@ export const useUser = () => {
 
 ## 3. Error Handling
 
-- Use `try/catch` blocks for async operations not handled by `useQuery`.
-- Handle `isError` and `error` states when using `useQuery`.
+- Use `try/catch` blocks for async operations.
 - Use Nuxt's `createError` for throwing errors in pages/API routes that should trigger error pages.
 
 ## 4. Nuxt 4 Specifics
