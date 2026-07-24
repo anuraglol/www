@@ -14,7 +14,12 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
 
       <p class="leading-6">
         ohayo! im <Hover /> [he/him] - currently a design engineer
-        <a href="https://beanstalk.fi" target="_blank" rel="noopener norefferer" class="highlight">
+        <a
+          href="https://beanstalk.fi"
+          target="_blank"
+          rel="noopener norefferer"
+          class="highlight underline decoration-dashed underline-offset-4"
+        >
           @beanstalk
         </a>
       </p>
@@ -25,7 +30,7 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
           href="https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Durgapur"
           target="_blank"
           rel="noopener noreferrer"
-          class="highlight"
+          class="highlight underline decoration-dashed underline-offset-4"
           >nit durgapur</a
         >, studying <span class="highlight">biotechnology</span>. for the past 4+ years, i've been
         building across the web, mainly the web3 ecosystem: trading interfaces, payment
@@ -45,7 +50,7 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
           :href="link.href"
           target="_blank"
           rel="noreferrer"
-          class="hover:underline underline-offset-4"
+          class="underline decoration-dashed underline-offset-4"
         >
           {{ link.name }}
         </a>
