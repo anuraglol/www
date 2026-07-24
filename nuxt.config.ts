@@ -10,6 +10,29 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2026-07-15",
 
+  experimental: {
+    payloadExtraction: true,
+    renderJsonPayloads: true,
+  },
+
+  routeRules: {
+    "/_nuxt/**": {
+      headers: {
+        "cache-control": "public, max-age=31536000, immutable",
+      },
+    },
+    "/fonts/**": {
+      headers: {
+        "cache-control": "public, max-age=31536000, immutable",
+      },
+    },
+    "/favicon.ico": {
+      headers: {
+        "cache-control": "public, max-age=604800",
+      },
+    },
+  },
+
   nitro: {
     prerender: {
       crawlLinks: true,

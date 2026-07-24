@@ -4,7 +4,9 @@ import { onMounted } from "vue";
 onMounted(() => {
   const router = useRouter();
   requestIdleCallback(() => {
-    preloadRouteComponents("/photos", router).catch(() => {});
+    ["/photos", "/loves", "/uses"].forEach((route) => {
+      preloadRouteComponents(route, router).catch(() => {});
+    });
   });
 });
 
@@ -17,7 +19,7 @@ useHead({
       as: "font",
       type: "font/woff2",
       href: "/fonts/Satoshi-Variable.woff2",
-      crossorigin: "",
+      crossorigin: true,
     },
     { rel: "preconnect", href: "https://res.cloudinary.com" },
     { rel: "dns-prefetch", href: "https://res.cloudinary.com" },

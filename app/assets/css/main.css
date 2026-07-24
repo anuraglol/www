@@ -36,6 +36,7 @@
 @layer base {
   body {
     letter-spacing: var(--tracking-normal);
+    font-synthesis: none;
     @apply text-[17px] bg-background text-foreground antialiased font-normal;
   }
 
