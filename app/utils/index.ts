@@ -41,7 +41,7 @@ export const EXPERIENCES = [
   {
     title: "Lead Engineer at CandyPay",
     link: "https://twitter.com/candypayfun",
-    description: `I've previously also worked on ${highlight("CandyPay")}, a seamless checkout solution built on top of ${highlight("Solana Pay")}, where I was responsible for building the core backend infrastructure. It was used by ${highlight("500+")} ecosystem teams, including ${highlight("Solana Foundation")} and ${highlight("Prospera Global")}, and was also used by ${highlight("Balaji Srinivasan")} during one of his Network State meetups. I built two production-ready web apps including a user dashboard and checkout platform, designed and developed the frontend architecture from scratch, and created a React-based checkout SDK for easy integration across third-party sites.`,
+    description: `I've previously also worked on ${highlight("CandyPay")}, a seamless checkout solution built on top of ${highlight("Solana Pay")}, where I led the frontend development. It was used by ${highlight("500+")} ecosystem teams, including ${highlight("Solana Foundation")} and ${highlight("Prospera Global")}, and was also used by ${highlight("Balaji Srinivasan")} during one of his Network State meetups. I built two production-ready web apps including a user dashboard and checkout platform, designed the frontend architecture from scratch, and created a React-based checkout SDK for easy integration across third-party sites.`,
   },
   {
     title: "Developer at Metapass",
