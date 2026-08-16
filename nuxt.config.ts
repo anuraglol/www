@@ -31,6 +31,10 @@ export default defineNuxtConfig({
         "cache-control": "public, max-age=604800",
       },
     },
+
+    "/candypay-archive": {
+      redirect: { to: "https://turkeys-report-a2m.craft.me/8LpQJQ0tNPkLau", statusCode: 301 },
+    },
   },
 
   nitro: {
