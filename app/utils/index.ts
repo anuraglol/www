@@ -1,4 +1,5 @@
 export const LINKS = [
+  { name: "resume", href: "/resume" },
   { name: "github", href: "https://github.com/anuraglol" },
   { name: "twitter", href: "https://twitter.com/imanuraglol" },
   { name: "email", href: "mailto:hi@anurag.tech" },
