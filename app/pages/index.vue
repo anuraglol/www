@@ -13,11 +13,11 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
       <p class="mb-6">welcome to my <span class="highlight">corner</span> of the internet!</p>
 
       <p class="leading-6">
-        ohayo! im <Hover /> [he/him] - currently a design engineer
+        ohayo! i'm <Hover /> [he/him], a design engineer
         <a
           href="https://beanstalk.fi"
           target="_blank"
-          rel="noopener norefferer"
+          rel="noopener noreferrer"
           class="highlight underline decoration-dashed underline-offset-4"
         >
           @beanstalk
@@ -25,23 +25,38 @@ const isSafeHtml = (value: string): boolean => value.includes('data-safe="highli
       </p>
 
       <p class="mt-3 leading-6">
-        i'm a fullstack engineer and an undergraduate at
+        i'm an undergraduate at
         <a
           href="https://en.wikipedia.org/wiki/National_Institute_of_Technology,_Durgapur"
           target="_blank"
           rel="noopener noreferrer"
           class="highlight underline decoration-dashed underline-offset-4"
-          >nit durgapur</a
-        >, studying <span class="highlight">biotechnology</span>. for the past 4+ years, i've been
-        building across the web, mainly the web3 ecosystem: trading interfaces, payment
-        infrastructure, and developer tooling used by thousands. i specialize in frontend
-        development, with a focus on clean architecture and scalable web applications.
+        >
+          nit durgapur </a
+        >, studying <span class="highlight">biotechnology</span>. i've been building software for 4+
+        years, primarily across the web ecosystem. i've worked on trading interfaces, payment
+        infrastructure and developer tooling used by thousands.
       </p>
 
       <p class="mt-3 leading-6">
-        thanks for stopping by! outside of work, i love consuming different forms of media,
-        tinkering with my <span class="highlight">*nix</span> setup, or doing maths when i'm bored.
+        my work has mostly lived at the intersection of product and engineering, with a particular
+        focus on frontend architecture, developer experience, and building scalable web applications
+        and infrastructure.
       </p>
+
+      <p class="mt-3 leading-6">
+        outside of work, i've been gradually wandering deeper into the stack. lately i've been
+        learning systems by building things from scratch, a chip-8 emulator in zig, a redis clone
+        and a web-based sync engine. i've also spent a questionable amount of time tinkering with my
+        <span class="highlight">*nix</span> setup.
+      </p>
+
+      <p class="mt-3 leading-6">
+        when i'm not building things, i like reading, consuming various forms of media, and doing
+        maths when i'm bored.
+      </p>
+
+      <p class="mt-3 leading-6">thanks for stopping by!</p>
 
       <div class="flex flex-wrap gap-4 items-center text-orange-600 mt-6">
         <a
