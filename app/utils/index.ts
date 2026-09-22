@@ -146,21 +146,21 @@ export const PROJECTS = [
     url: "https://github.com/anuraglol/kotiri",
   },
   {
-    title: "kaze",
+    title: "chip8-emu",
     description:
-      "a minimal torrent client built in golang. supports downloading files via magnet links and .torrent files with peer wire protocol implementation.",
-    url: "https://github.com/anuraglol/kaze",
+      "a chip-8 emulator written in zig, with a tui frontend for running and playing chip-8 games directly in the terminal.",
+    url: "https://github.com/anuraglol/chip8-emu",
   },
   {
     title: "React & Next.js Snippets (VSCode ext)",
     description:
-      "A VSCode extension with React and Next.js snippets, used by over 30,000 developers to speed up development.",
+      "a vscode extension with react and next.js snippets, used by over 30,000 developers to speed up development.",
     url: "https://marketplace.visualstudio.com/items?itemName=AvneeshAgarwal.react-nextjs-snippets",
   },
   {
-    title: "Proof of Attendance NFT Engine",
+    title: "ito",
     description:
-      "An image generation service that created custom NFTs for NAS Daily Summit attendees using @vercel/og.",
-    url: "https://github.com/anuraglol/nas-summit-nft-gen",
+      "a local-first sync engine with a kanban board on top. state lives locally and mutates optimistically, while the backend handles d1 persistence, conflict detection, and realtime updates over durable websocket.",
+    url: "https://github.com/anuraglol/ito",
   },
 ];
